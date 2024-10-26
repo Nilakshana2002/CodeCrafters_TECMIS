@@ -10,7 +10,7 @@ CREATE TABLE Departments(
 
 INSERT INTO Departments (departmentId, departmentName)
 VALUES
-("DICT","Department of Information and Communication Technology"),
-("DENT","Department of Engineering Technology"),
-("DBST","Department of Bio Systems Technology"),
+("ICT","Department of Information and Communication Technology"),
+("ENT","Department of Engineering Technology"),
+("BST","Department of Bio Systems Technology"),
 ("DMS","Department of MultiDisciplinary");
