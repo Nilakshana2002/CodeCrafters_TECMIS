@@ -1062,3 +1062,618 @@ VALUES
 ('TG/2022/0006', 'ENG1222', 'BST', '2024-09-30', 'Theory', 'Present', NULL),
 ('TG/2022/0006', 'ENG1222', 'BST', '2024-10-21', 'Theory', 'Present', NULL),
 ('TG/2022/0006', 'ENG1222', 'BST', '2024-10-30', 'Theory', 'Present', NULL);
+
+
+
+
+
+
+Inserting DATA INTO ET Students,
+
+1.ENG1222
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0007', 'ENG1222', 'ET', '2024-08-10', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENG1222', 'ET', '2024-08-14', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENG1222', 'ET', '2024-08-16', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENG1222', 'ET', '2024-08-21', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENG1222', 'ET', '2024-08-27', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENG1222', 'ET', '2024-08-30', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENG1222', 'ET', '2024-09-04', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENG1222', 'ET', '2024-09-06', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENG1222', 'ET', '2024-09-11', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENG1222', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENG1222', 'ET', '2024-09-25', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENG1222', 'ET', '2024-09-27', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENG1222', 'ET', '2024-09-30', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENG1222', 'ET', '2024-10-21', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENG1222', 'ET', '2024-10-30', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENG1222', 'ET', '2024-08-10', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENG1222', 'ET', '2024-08-14', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENG1222', 'ET', '2024-08-16', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENG1222', 'ET', '2024-08-21', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENG1222', 'ET', '2024-08-27', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENG1222', 'ET', '2024-08-30', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENG1222', 'ET', '2024-09-04', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENG1222', 'ET', '2024-09-06', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENG1222', 'ET', '2024-09-11', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENG1222', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENG1222', 'ET', '2024-09-25', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENG1222', 'ET', '2024-09-27', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENG1222', 'ET', '2024-09-30', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENG1222', 'ET', '2024-10-21', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENG1222', 'ET', '2024-10-30', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENG1222', 'ET', '2024-08-10', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENG1222', 'ET', '2024-08-14', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENG1222', 'ET', '2024-08-16', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENG1222', 'ET', '2024-08-21', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENG1222', 'ET', '2024-08-27', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENG1222', 'ET', '2024-08-30', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENG1222', 'ET', '2024-09-04', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENG1222', 'ET', '2024-09-06', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENG1222', 'ET', '2024-09-11', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENG1222', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENG1222', 'ET', '2024-09-25', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENG1222', 'ET', '2024-09-27', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENG1222', 'ET', '2024-09-30', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENG1222', 'ET', '2024-10-21', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENG1222', 'ET', '2024-10-30', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENG1222', 'ET', '2024-08-10', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENG1222', 'ET', '2024-08-14', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENG1222', 'ET', '2024-08-16', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENG1222', 'ET', '2024-08-21', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENG1222', 'ET', '2024-08-27', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENG1222', 'ET', '2024-08-30', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENG1222', 'ET', '2024-09-04', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENG1222', 'ET', '2024-09-06', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENG1222', 'ET', '2024-09-11', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENG1222', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENG1222', 'ET', '2024-09-25', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENG1222', 'ET', '2024-09-27', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENG1222', 'ET', '2024-09-30', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENG1222', 'ET', '2024-10-21', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENG1222', 'ET', '2024-10-30', 'Theory', 'Present', NULL);
+
+2.ENT1231
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0007', 'ENT1231', 'ET', '2024-08-12', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1231', 'ET', '2024-08-19', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1231', 'ET', '2024-08-26', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1231', 'ET', '2024-09-02', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1231', 'ET', '2024-09-09', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1231', 'ET', '2024-09-12', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1231', 'ET', '2024-09-16', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1231', 'ET', '2024-09-23', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1231', 'ET', '2024-09-30', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1231', 'ET', '2024-10-01', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1231', 'ET', '2024-10-07', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1231', 'ET', '2024-10-08', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1231', 'ET', '2024-10-14', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1231', 'ET', '2024-10-21', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1231', 'ET', '2024-10-28', 'Practical', 'Present', NULL);
+
+
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0008', 'ENT1231', 'ET', '2024-08-12', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1231', 'ET', '2024-08-19', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1231', 'ET', '2024-08-26', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1231', 'ET', '2024-09-02', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1231', 'ET', '2024-09-09', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1231', 'ET', '2024-09-12', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1231', 'ET', '2024-09-16', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1231', 'ET', '2024-09-23', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1231', 'ET', '2024-09-30', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1231', 'ET', '2024-10-01', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1231', 'ET', '2024-10-07', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1231', 'ET', '2024-10-08', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1231', 'ET', '2024-10-14', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1231', 'ET', '2024-10-21', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1231', 'ET', '2024-10-28', 'Practical', 'Present', NULL);
+
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0009', 'ENT1231', 'ET', '2024-08-12', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1231', 'ET', '2024-08-19', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1231', 'ET', '2024-08-26', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1231', 'ET', '2024-09-02', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1231', 'ET', '2024-09-09', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1231', 'ET', '2024-09-12', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1231', 'ET', '2024-09-16', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1231', 'ET', '2024-09-23', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1231', 'ET', '2024-09-30', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1231', 'ET', '2024-10-01', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1231', 'ET', '2024-10-07', 'Practical', 'Absent', NULL),
+('TG/2022/0009', 'ENT1231', 'ET', '2024-10-08', 'Practical', 'Absent', NULL),
+('TG/2022/0009', 'ENT1231', 'ET', '2024-10-14', 'Practical', 'Absent', NULL),
+('TG/2022/0009', 'ENT1231', 'ET', '2024-10-21', 'Practical', 'Absent', NULL),
+('TG/2022/0009', 'ENT1231', 'ET', '2024-10-28', 'Practical', 'Absent', NULL);
+
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0010', 'ENT1231', 'ET', '2024-08-12', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1231', 'ET', '2024-08-19', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1231', 'ET', '2024-08-26', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1231', 'ET', '2024-09-02', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1231', 'ET', '2024-09-09', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1231', 'ET', '2024-09-12', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1231', 'ET', '2024-09-16', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1231', 'ET', '2024-09-23', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1231', 'ET', '2024-09-30', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1231', 'ET', '2024-10-01', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1231', 'ET', '2024-10-07', 'Practical', 'Absent', NULL),
+('TG/2022/0010', 'ENT1231', 'ET', '2024-10-08', 'Practical', 'Absent', NULL),
+('TG/2022/0010', 'ENT1231', 'ET', '2024-10-14', 'Practical', 'Absent', NULL),
+('TG/2022/0010', 'ENT1231', 'ET', '2024-10-21', 'Practical', 'Absent', NULL),
+('TG/2022/0010', 'ENT1231', 'ET', '2024-10-28', 'Practical', 'Absent', NULL);
+
+3.1211
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0007', 'ENT1211', 'ET', '2024-08-13', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1211', 'ET', '2024-08-20', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1211', 'ET', '2024-08-27', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1211', 'ET', '2024-09-03', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1211', 'ET', '2024-09-10', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1211', 'ET', '2024-09-17', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1211', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1211', 'ET', '2024-09-24', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1211', 'ET', '2024-10-01', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1211', 'ET', '2024-10-08', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1211', 'ET', '2024-10-15', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1211', 'ET', '2024-10-22', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1211', 'ET', '2024-10-29', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1211', 'ET', '2024-10-30', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1211', 'ET', '2024-10-31', 'Theory', 'Present', NULL);
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0008', 'ENT1211', 'ET', '2024-08-13', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1211', 'ET', '2024-08-20', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1211', 'ET', '2024-08-27', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1211', 'ET', '2024-09-03', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1211', 'ET', '2024-09-10', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1211', 'ET', '2024-09-17', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1211', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1211', 'ET', '2024-09-24', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1211', 'ET', '2024-10-01', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1211', 'ET', '2024-10-08', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1211', 'ET', '2024-10-15', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1211', 'ET', '2024-10-22', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1211', 'ET', '2024-10-29', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1211', 'ET', '2024-10-30', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1211', 'ET', '2024-10-31', 'Theory', 'Present', NULL);
+
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0009', 'ENT1211', 'ET', '2024-08-13', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1211', 'ET', '2024-08-20', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1211', 'ET', '2024-08-27', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1211', 'ET', '2024-09-03', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1211', 'ET', '2024-09-10', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1211', 'ET', '2024-09-17', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1211', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1211', 'ET', '2024-09-24', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1211', 'ET', '2024-10-01', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1211', 'ET', '2024-10-08', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1211', 'ET', '2024-10-15', 'Theory', 'Absent', NULL),
+('TG/2022/0009', 'ENT1211', 'ET', '2024-10-22', 'Theory', 'Absent', NULL),
+('TG/2022/0009', 'ENT1211', 'ET', '2024-10-29', 'Theory', 'Absent', NULL),
+('TG/2022/0009', 'ENT1211', 'ET', '2024-10-30', 'Theory', 'Absent', NULL),
+('TG/2022/0009', 'ENT1211', 'ET', '2024-10-31', 'Theory', 'Absent', NULL);
+
+
+
+
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0010', 'ENT1211', 'ET', '2024-08-13', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1211', 'ET', '2024-08-20', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1211', 'ET', '2024-08-27', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1211', 'ET', '2024-09-03', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1211', 'ET', '2024-09-10', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1211', 'ET', '2024-09-17', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1211', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1211', 'ET', '2024-09-24', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1211', 'ET', '2024-10-01', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1211', 'ET', '2024-10-08', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1211', 'ET', '2024-10-15', 'Theory', 'Absent', NULL),
+('TG/2022/0010', 'ENT1211', 'ET', '2024-10-22', 'Theory', 'Absent', NULL),
+('TG/2022/0010', 'ENT1211', 'ET', '2024-10-29', 'Theory', 'Absent', NULL),
+('TG/2022/0010', 'ENT1211', 'ET', '2024-10-30', 'Theory', 'Absent', NULL),
+('TG/2022/0010', 'ENT1211', 'ET', '2024-10-31', 'Theory', 'Absent', NULL);
+
+4.1221
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0007', 'ENT1221', 'ET', '2024-08-13', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1221', 'ET', '2024-08-20', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1221', 'ET', '2024-08-27', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1221', 'ET', '2024-09-03', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1221', 'ET', '2024-09-10', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1221', 'ET', '2024-09-17', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1221', 'ET', '2024-09-19', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1221', 'ET', '2024-09-24', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1221', 'ET', '2024-10-01', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1221', 'ET', '2024-10-08', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1221', 'ET', '2024-10-15', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1221', 'ET', '2024-10-22', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1221', 'ET', '2024-10-29', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1221', 'ET', '2024-10-30', 'Practical', 'Present', NULL),
+('TG/2022/0007', 'ENT1221', 'ET', '2024-10-31', 'Practical', 'Present', NULL);
+
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0008', 'ENT1221', 'ET', '2024-08-13', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1221', 'ET', '2024-08-20', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1221', 'ET', '2024-08-27', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1221', 'ET', '2024-09-03', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1221', 'ET', '2024-09-10', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1221', 'ET', '2024-09-17', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1221', 'ET', '2024-09-19', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1221', 'ET', '2024-09-24', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1221', 'ET', '2024-10-01', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1221', 'ET', '2024-10-08', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1221', 'ET', '2024-10-15', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1221', 'ET', '2024-10-22', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1221', 'ET', '2024-10-29', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1221', 'ET', '2024-10-30', 'Practical', 'Present', NULL),
+('TG/2022/0008', 'ENT1221', 'ET', '2024-10-31', 'Practical', 'Present', NULL);
+
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0009', 'ENT1221', 'ET', '2024-08-13', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1221', 'ET', '2024-08-20', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1221', 'ET', '2024-08-27', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1221', 'ET', '2024-09-03', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1221', 'ET', '2024-09-10', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1221', 'ET', '2024-09-17', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1221', 'ET', '2024-09-19', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1221', 'ET', '2024-09-24', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1221', 'ET', '2024-10-01', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1221', 'ET', '2024-10-08', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1221', 'ET', '2024-10-15', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1221', 'ET', '2024-10-22', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1221', 'ET', '2024-10-29', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1221', 'ET', '2024-10-30', 'Practical', 'Present', NULL),
+('TG/2022/0009', 'ENT1221', 'ET', '2024-10-31', 'Practical', 'Present', NULL);
+
+
+
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0010', 'ENT1221', 'ET', '2024-08-13', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1221', 'ET', '2024-08-20', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1221', 'ET', '2024-08-27', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1221', 'ET', '2024-09-03', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1221', 'ET', '2024-09-10', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1221', 'ET', '2024-09-17', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1221', 'ET', '2024-09-19', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1221', 'ET', '2024-09-24', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1221', 'ET', '2024-10-01', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1221', 'ET', '2024-10-08', 'Practical', 'Present', NULL),
+('TG/2022/0010', 'ENT1221', 'ET', '2024-10-15', 'Practical', 'Absent', NULL),
+('TG/2022/0010', 'ENT1221', 'ET', '2024-10-22', 'Practical', 'Absent', NULL),
+('TG/2022/0010', 'ENT1221', 'ET', '2024-10-29', 'Practical', 'Absent', NULL),
+('TG/2022/0010', 'ENT1221', 'ET', '2024-10-30', 'Practical', 'Absent', NULL),
+('TG/2022/0010', 'ENT1221', 'ET', '2024-10-31', 'Practical', 'Absent', NULL);
+
+5.1242
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0007', 'ENT1242', 'ET', '2024-08-15', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1242', 'ET', '2024-08-22', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1242', 'ET', '2024-08-29', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1242', 'ET', '2024-09-05', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1242', 'ET', '2024-09-12', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1242', 'ET', '2024-09-15', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1242', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1242', 'ET', '2024-09-26', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1242', 'ET', '2024-09-29', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1242', 'ET', '2024-10-03', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1242', 'ET', '2024-10-10', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1242', 'ET', '2024-10-11', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1242', 'ET', '2024-10-18', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1242', 'ET', '2024-10-24', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1242', 'ET', '2024-10-25', 'Theory', 'Present', NULL);
+
+
+
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0008', 'ENT1242', 'ET', '2024-08-15', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1242', 'ET', '2024-08-22', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1242', 'ET', '2024-08-29', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1242', 'ET', '2024-09-05', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1242', 'ET', '2024-09-12', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1242', 'ET', '2024-09-15', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1242', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1242', 'ET', '2024-09-26', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1242', 'ET', '2024-09-29', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1242', 'ET', '2024-10-03', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1242', 'ET', '2024-10-10', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1242', 'ET', '2024-10-11', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1242', 'ET', '2024-10-18', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1242', 'ET', '2024-10-24', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1242', 'ET', '2024-10-25', 'Theory', 'Present', NULL);
+
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0009', 'ENT1242', 'ET', '2024-08-15', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1242', 'ET', '2024-08-22', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1242', 'ET', '2024-08-29', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1242', 'ET', '2024-09-05', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1242', 'ET', '2024-09-12', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1242', 'ET', '2024-09-15', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1242', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1242', 'ET', '2024-09-26', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1242', 'ET', '2024-09-29', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1242', 'ET', '2024-10-03', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1242', 'ET', '2024-10-10', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1242', 'ET', '2024-10-11', 'Theory', 'Absent', NULL),
+('TG/2022/0009', 'ENT1242', 'ET', '2024-10-18', 'Theory', 'Absent', NULL),
+('TG/2022/0009', 'ENT1242', 'ET', '2024-10-24', 'Theory', 'Absent', 'MED09'),
+('TG/2022/0009', 'ENT1242', 'ET', '2024-10-25', 'Theory', 'Absent', 'MED10');
+
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0010', 'ENT1242', 'ET', '2024-08-15', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1242', 'ET', '2024-08-22', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1242', 'ET', '2024-08-29', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1242', 'ET', '2024-09-05', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1242', 'ET', '2024-09-12', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1242', 'ET', '2024-09-15', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1242', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1242', 'ET', '2024-09-26', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1242', 'ET', '2024-09-29', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1242', 'ET', '2024-10-03', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1242', 'ET', '2024-10-10', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1242', 'ET', '2024-10-11', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1242', 'ET', '2024-10-18', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1242', 'ET', '2024-10-24', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1242', 'ET', '2024-10-25', 'Theory', 'Present', NULL);
+
+6.1253
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0007', 'ENT1253', 'ET', '2024-08-15', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1253', 'ET', '2024-08-22', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1253', 'ET', '2024-08-29', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1253', 'ET', '2024-09-05', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1253', 'ET', '2024-09-12', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1253', 'ET', '2024-09-15', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1253', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1253', 'ET', '2024-09-26', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1253', 'ET', '2024-09-29', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1253', 'ET', '2024-10-03', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1253', 'ET', '2024-10-10', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1253', 'ET', '2024-10-11', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1253', 'ET', '2024-10-18', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1253', 'ET', '2024-10-24', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'ENT1253', 'ET', '2024-10-25', 'Theory', 'Present', NULL);
+
+
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0008', 'ENT1253', 'ET', '2024-08-15', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1253', 'ET', '2024-08-22', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1253', 'ET', '2024-08-29', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1253', 'ET', '2024-09-05', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1253', 'ET', '2024-09-12', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1253', 'ET', '2024-09-15', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1253', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1253', 'ET', '2024-09-26', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1253', 'ET', '2024-09-29', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1253', 'ET', '2024-10-03', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1253', 'ET', '2024-10-10', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1253', 'ET', '2024-10-11', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1253', 'ET', '2024-10-18', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1253', 'ET', '2024-10-24', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'ENT1253', 'ET', '2024-10-25', 'Theory', 'Present', NULL);
+
+
+
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0009', 'ENT1253', 'ET', '2024-08-15', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1253', 'ET', '2024-08-22', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1253', 'ET', '2024-08-29', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1253', 'ET', '2024-09-05', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1253', 'ET', '2024-09-12', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1253', 'ET', '2024-09-15', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1253', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1253', 'ET', '2024-09-26', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1253', 'ET', '2024-09-29', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1253', 'ET', '2024-10-03', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1253', 'ET', '2024-10-10', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1253', 'ET', '2024-10-11', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1253', 'ET', '2024-10-18', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1253', 'ET', '2024-10-24', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'ENT1253', 'ET', '2024-10-25', 'Theory', 'Present', NULL);
+
+
+
+
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0010', 'ENT1253', 'ET', '2024-08-15', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1253', 'ET', '2024-08-22', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1253', 'ET', '2024-08-29', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1253', 'ET', '2024-09-05', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1253', 'ET', '2024-09-12', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1253', 'ET', '2024-09-15', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1253', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1253', 'ET', '2024-09-26', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1253', 'ET', '2024-09-29', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1253', 'ET', '2024-10-03', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1253', 'ET', '2024-10-10', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1253', 'ET', '2024-10-11', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1253', 'ET', '2024-10-18', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1253', 'ET', '2024-10-24', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'ENT1253', 'ET', '2024-10-25', 'Theory', 'Present', NULL);
+
+7.TCS1212
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0007', 'TCS1212', 'DMS', '2024-08-16', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TCS1212', 'DMS', '2024-08-22', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TCS1212', 'DMS', '2024-08-30', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TCS1212', 'DMS', '2024-09-01', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TCS1212', 'DMS', '2024-09-05', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TCS1212', 'DMS', '2024-09-12', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TCS1212', 'DMS', '2024-09-13', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TCS1212', 'DMS', '2024-09-15', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TCS1212', 'DMS', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TCS1212', 'DMS', '2024-09-26', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TCS1212', 'DMS', '2024-09-27', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TCS1212', 'DMS', '2024-10-01', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TCS1212', 'DMS', '2024-10-03', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TCS1212', 'DMS', '2024-10-10', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TCS1212', 'DMS', '2024-10-15', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TCS1212', 'DMS', '2024-08-16', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TCS1212', 'DMS', '2024-08-22', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TCS1212', 'DMS', '2024-08-30', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TCS1212', 'DMS', '2024-09-01', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TCS1212', 'DMS', '2024-09-05', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TCS1212', 'DMS', '2024-09-12', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TCS1212', 'DMS', '2024-09-13', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TCS1212', 'DMS', '2024-09-15', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TCS1212', 'DMS', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TCS1212', 'DMS', '2024-09-26', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TCS1212', 'DMS', '2024-09-27', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TCS1212', 'DMS', '2024-10-01', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TCS1212', 'DMS', '2024-10-03', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TCS1212', 'DMS', '2024-10-10', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TCS1212', 'DMS', '2024-10-15', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TCS1212', 'DMS', '2024-08-16', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TCS1212', 'DMS', '2024-08-22', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TCS1212', 'DMS', '2024-08-30', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TCS1212', 'DMS', '2024-09-01', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TCS1212', 'DMS', '2024-09-05', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TCS1212', 'DMS', '2024-09-12', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TCS1212', 'DMS', '2024-09-13', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TCS1212', 'DMS', '2024-09-15', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TCS1212', 'DMS', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TCS1212', 'DMS', '2024-09-26', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TCS1212', 'DMS', '2024-09-27', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TCS1212', 'DMS', '2024-10-01', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TCS1212', 'DMS', '2024-10-03', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TCS1212', 'DMS', '2024-10-10', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TCS1212', 'DMS', '2024-10-15', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TCS1212', 'DMS', '2024-08-16', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TCS1212', 'DMS', '2024-08-22', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TCS1212', 'DMS', '2024-08-30', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TCS1212', 'DMS', '2024-09-01', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TCS1212', 'DMS', '2024-09-05', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TCS1212', 'DMS', '2024-09-12', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TCS1212', 'DMS', '2024-09-13', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TCS1212', 'DMS', '2024-09-15', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TCS1212', 'DMS', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TCS1212', 'DMS', '2024-09-26', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TCS1212', 'DMS', '2024-09-27', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TCS1212', 'DMS', '2024-10-01', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TCS1212', 'DMS', '2024-10-03', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TCS1212', 'DMS', '2024-10-10', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TCS1212', 'DMS', '2024-10-15', 'Theory', 'Present', NULL);
+
+8.1223
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0007', 'TMS1223', 'ET', '2024-08-10', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TMS1223', 'ET', '2024-08-14', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TMS1223', 'ET', '2024-08-16', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TMS1223', 'ET', '2024-08-21', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TMS1223', 'ET', '2024-08-28', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TMS1223', 'ET', '2024-09-01', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TMS1223', 'ET', '2024-09-04', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TMS1223', 'ET', '2024-09-11', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TMS1223', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TMS1223', 'ET', '2024-09-25', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TMS1223', 'ET', '2024-10-11', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TMS1223', 'ET', '2024-10-15', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TMS1223', 'ET', '2024-10-18', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TMS1223', 'ET', '2024-10-23', 'Theory', 'Present', NULL),
+('TG/2022/0007', 'TMS1223', 'ET', '2024-10-30', 'Theory', 'Present', NULL);
+
+
+
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0008', 'TMS1223', 'ET', '2024-08-10', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TMS1223', 'ET', '2024-08-14', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TMS1223', 'ET', '2024-08-16', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TMS1223', 'ET', '2024-08-21', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TMS1223', 'ET', '2024-08-28', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TMS1223', 'ET', '2024-09-01', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TMS1223', 'ET', '2024-09-04', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TMS1223', 'ET', '2024-09-11', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TMS1223', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TMS1223', 'ET', '2024-09-25', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TMS1223', 'ET', '2024-10-11', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TMS1223', 'ET', '2024-10-15', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TMS1223', 'ET', '2024-10-18', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TMS1223', 'ET', '2024-10-23', 'Theory', 'Present', NULL),
+('TG/2022/0008', 'TMS1223', 'ET', '2024-10-30', 'Theory', 'Present', NULL);
+
+
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0009', 'TMS1223', 'ET', '2024-08-10', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TMS1223', 'ET', '2024-08-14', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TMS1223', 'ET', '2024-08-16', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TMS1223', 'ET', '2024-08-21', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TMS1223', 'ET', '2024-08-28', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TMS1223', 'ET', '2024-09-01', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TMS1223', 'ET', '2024-09-04', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TMS1223', 'ET', '2024-09-11', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TMS1223', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TMS1223', 'ET', '2024-09-25', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TMS1223', 'ET', '2024-10-11', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TMS1223', 'ET', '2024-10-15', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TMS1223', 'ET', '2024-10-18', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TMS1223', 'ET', '2024-10-23', 'Theory', 'Present', NULL),
+('TG/2022/0009', 'TMS1223', 'ET', '2024-10-30', 'Theory', 'Present', NULL);
+
+
+INSERT INTO attendance (student_ID, course_ID, Department_ID, session_Date, session_Type, A_Status, Medical_ID)
+VALUES
+('TG/2022/0010', 'TMS1223', 'ET', '2024-08-10', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TMS1223', 'ET', '2024-08-14', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TMS1223', 'ET', '2024-08-16', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TMS1223', 'ET', '2024-08-21', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TMS1223', 'ET', '2024-08-28', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TMS1223', 'ET', '2024-09-01', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TMS1223', 'ET', '2024-09-04', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TMS1223', 'ET', '2024-09-11', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TMS1223', 'ET', '2024-09-19', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TMS1223', 'ET', '2024-09-25', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TMS1223', 'ET', '2024-10-11', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TMS1223', 'ET', '2024-10-15', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TMS1223', 'ET', '2024-10-18', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TMS1223', 'ET', '2024-10-23', 'Theory', 'Present', NULL),
+('TG/2022/0010', 'TMS1223', 'ET', '2024-10-30', 'Theory', 'Present', NULL);
