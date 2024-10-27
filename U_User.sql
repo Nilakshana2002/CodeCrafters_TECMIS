@@ -1,15 +1,15 @@
 /* CREATE User Table*/
 
 CREATE TABLE user(
-NIC INT,
-F_Name VARCHAR(30),
-L_Name VARCH
-Address VARCHAR(50),
-E_Mail VARCHAR(30),
+NIC BIGINT,
+F_Name VARCHAR(50),
+L_Name VARCHAR(50),
+Address VARCHAR(100),
+E_Mail VARCHAR(100),
 Contact_Num VARCHAR(12),
 DoB DATE,
-Gender VARCHAR(5),
-Role VARCHAR(10),
+Gender VARCHAR(10),
+Role VARCHAR(20),
 Department_ID VARCHAR(10),
 PRIMARY KEY(NIC)
 );
