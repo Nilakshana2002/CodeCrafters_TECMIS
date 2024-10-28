@@ -58,7 +58,11 @@ VALUES
 (987654321004, "Rashmi", "Fernando", "No 56, Temple Road, Galle", "r.fernando@etec.ruh.ac.lk", "0769876543", "1984-02-18", "Female", "Lecture", "ET"),
 (987654321005, "Dilan", "Weerasinghe", "No 21, Rajagiriya Lane, Nawala", "d.weerasinghe@bstec.ruh.ac.lk", "0773456789", "1986-11-11", "Male", "Lecture", "BST"),
 (987654321006, "Sanjeewa", "Wijesinghe", "No 47, High Level Road, Nugegoda", "s.wijesinghe@bstec.ruh.ac.lk", "0709876543", "1988-01-25", "Male", "Lecture", "BST"),
-(987654321007, "Thilini", "Ratnayake", "No 10, Negombo Road, Ja-Ela", "t.ratnayake@dmsec.ruh.ac.lk", "0715432109", "1985-09-14", "Female", "Lecture", "DMS");
+(987654321007, "Thilini", "Ratnayake", "No 10, Negombo Road, Ja-Ela", "t.ratnayake@dmsec.ruh.ac.lk", "0715432109", "1985-09-14", "Female", "Lecture", "DMS"),
+(987654321008, "Nimal", "De Silva", "No 15, Lake Road, Kandy", "n.desilva@ictec.ruh.ac.lk", "0779876543", "1982-03-12", "Male", "Lecture", "ICT"),
+(987654321009, "Kasuni", "Wijeratne", "No 22, Flower Street, Kurunegala", "k.wijeratne@etec.ruh.ac.lk", "0712345678", "1986-07-30", "Female", "Lecture", "ET"),
+(987654321010, "Chamika", "Dissanayake", "No 90, Main Street, Anuradhapura", "c.dissanayake@bstec.ruh.ac.lk", "0766543210", "1984-10-17", "Male", "Lecture", "BST"),
+(987654321011, "Dilani", "Hettiarachchi", "No 50, Sea View Avenue, Colombo", "d.hettiarachchi@dmsec.ruh.ac.lk", "0787654321", "1985-12-05", "Female", "Lecture", "DMS");
 
 
 /*INSERT TECHNICAL OFFICER DATA TO TABLE*/
