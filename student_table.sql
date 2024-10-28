@@ -2,7 +2,7 @@
 
 CREATE TABLE student(
     studentId CHAR(12),
-    studentNic INT,
+    studentNic BIGINT,
     state VARCHAR (20),
     PRIMARY KEY (studentId),
     FOREIGN KEY (studentNic) REFERENCES user(NIC) ON DELETE CASCADE ON UPDATE
