@@ -18,6 +18,11 @@ PRIMARY KEY(NIC)
 
 ALTER TABLE user ADD FOREIGIN KEY(Department_ID) REFERENCES department(Department_id)
 
+/*INSERT DEAN DATA TO TABLE*/
+
+INSERT INTO user (NIC, F_Name, L_Name, Address, E_Mail, Contact_Num, DoB, Gender, Role, Department_ID)
+VALUES
+(887654321001, "Sarath", "Yatawara", "No 21, Hospital Road, Panadura", "s.yatawara_2018@ictec.ruh.ac.lk", "0760879990", "1985-05-18", "Male", "Dean", "ICT"),
 
 /*INSERT STUDENT DATA TO TABLE*/
 
@@ -38,9 +43,9 @@ VALUES
 (123456789013, "Chathuri", "Gunawardena", "No 23, Main Street, Ratnapura", "c.gunawardena_2021@fot.ruh.ac.lk", "0765432101", "2002-06-25", "Male", "Student", "BST"),
 (123456789014, "Sangeetha", "Rathnayake", "No 5, Yala Road, Hambantota", "s.rathnayake_2021@fot.ruh.ac.lk", "0788765432", "2002-09-30", "Female", "Student", "BST"),
 (123456789015, "Upul", "Wickramasinghe", "No 11, Stanley Thilakaratne Mawatha, Dehiwala", "u.wickramasinghe_2021@fot.ruh.ac.lk", "0718765432", "2002-07-11", "Male", "Student", "ET"),
-(123456789016, "Nadeesha", "Liyanage", "No 9, Hospital Road, Monaragala", "n.liyanage_2021@fot.ruh.ac.lk", "0775432100", "2002-02-14", "Female", "Student", "ICT"),
-(123456789017, "Kasun", "Peiris", "No 4, Peradeniya Road, Kegalle", "k.peiris_2021@fot.ruh.ac.lk", "0713456789", "2002-03-08", "Male", "Student", "BST"),
-(123456789018, "Lakshan", "Karunarathne", "No 56, Sirisena Road, Jaffna", "l.karunarathne_2021@fot.ruh.ac.lk", "0760987654", "2002-10-05", "Female", "Student", "ET");
+(123456789016, "Nadeesha", "Liyanage", "No 9, Hospital Road, Monaragala", "n.liyanage_2020@fot.ruh.ac.lk", "0775432100", "2002-02-14", "Female", "Student", "ICT"),
+(123456789017, "Kasun", "Peiris", "No 4, Peradeniya Road, Kegalle", "k.peiris_2020@fot.ruh.ac.lk", "0713456789", "2002-03-08", "Male", "Student", "BST"),
+(123456789018, "Lakshan", "Karunarathne", "No 56, Sirisena Road, Jaffna", "l.karunarathne_2020@fot.ruh.ac.lk", "0760987654", "2002-10-05", "Female", "Student", "ET");
 
 
 /*INSERT LECTURE DATA TO TABLE*/
