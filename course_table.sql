@@ -9,15 +9,15 @@ CREATE TABLE course(
     lecturerId VARCHAR (10),
     departmentId VARCHAR (10),
     PRIMARY KEY (courseId,courseType),
-    FOREIGN KEY (lecturerId) REFERENCES lecturer(lecturerId) ON DELETE CASCADE ON UPDATE,
-    FOREIGN KEY (departmentId) REFERENCES Departments(departmentId) ON DELETE CASCADE ON UPDATE
+    FOREIGN KEY (lecturerId) REFERENCES lecture(Lecture_ID) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (departmentId) REFERENCES Departments(departmentId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 /*INSERT DATA TO COURSE TABLE*/
 
 INSERT INTO course (courseId, courseName, courseType, credit, hours, lecturerId, departmentId) 
 VALUES
-("ENG1222","English II","T",,26,"L_007","DMS"),
+("ENG1222","English II","T",2,26,"L_007","DMS"),
 ("TCS1212","Fundamentals of Management","T",2,30,"L_011","DMS"),
 ("ICT1212","Database Management Systems","T",2,20,"L_001","ICT"),
 ("ICT1222","Database Management Systems Practicum","P",2,20,"L_001","ICT"),
