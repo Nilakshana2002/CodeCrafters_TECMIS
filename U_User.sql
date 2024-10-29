@@ -16,7 +16,7 @@ PRIMARY KEY(NIC)
 
 /*ADD FOREIGN KEY*/
 
-ALTER TABLE user ADD FOREIGIN KEY(Department_ID) REFERENCES department(Department_id)
+ALTER TABLE user ADD FOREIGIN KEY(Department_ID) REFERENCES department(Department_id);
 
 /*INSERT DEAN DATA TO TABLE*/
 
