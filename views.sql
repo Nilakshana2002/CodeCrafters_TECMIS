@@ -65,3 +65,9 @@ FROM course
 JOIN departments ON departments.departmentId = course.departmentId
 WHERE course.courseType = 'T' AND departments.departmentName = 'Department of Information and Communication Technology';
 
+--course units thats followed by strudent
+
+SELECT sc.courseId,c.courseName,c.credit,c.courseType
+FROM course c
+JOIN student_course sc ON sc.courseId = c.courseId
+WHERE sc.studentId = "TG/2022/0001";
