@@ -6,10 +6,7 @@ CREATE VIEW basicCourseInfo AS
 SELECT courseId,courseName,courseType,credit,hours
 FROM course;
 
-/*SELECT SUM(credit)
-FROM course
-JOIN departments ON departments.departmentId = course.departmentId
-WHERE course.courseType = 'T' AND departments.departmentName = 'Department of Information and Communication Technology';*/
+
 
 --course with lectures
 
@@ -61,4 +58,10 @@ CREATE VIEW courseTypeCount AS
 SELECT courseType,COUNT(courseId) AS 'Number of Courses'
 FROM course
 GROUP BY courseType;
+
+
+SELECT SUM(credit)
+FROM course
+JOIN departments ON departments.departmentId = course.departmentId
+WHERE course.courseType = 'T' AND departments.departmentName = 'Department of Information and Communication Technology';
 
