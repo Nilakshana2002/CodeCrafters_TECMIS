@@ -69,8 +69,6 @@ VALUES
 
 /*ICT Students*/
 
-INSERT INTO CA_Exam_M (student_ID, course_ID, Department_ID, Quiz1, Quiz2, Quiz3, Assesments, Mid_Practical, Mid_Theory,Medical_ID)
-VALUES
 INSERT INTO CA_Exam_M (student_ID, course_ID, Department_ID, Quiz1, Quiz2, Quiz3, Assesments, Mid_Practical, Mid_Theory, Medical_ID)
 VALUES
 ("TG/2022/0001", "ICT1212", "ICT", 85, 78, 82, 72, 0, 62, NULL),
@@ -95,8 +93,6 @@ VALUES
 
 /*ict suspend and repeat*/
 
-INSERT INTO CA_Exam_M (student_ID, course_ID, Department_ID, Quiz1, Quiz2, Quiz3, Assesments, Mid_Practical, Mid_Theory,Medical_ID)
-VALUES
 INSERT INTO CA_Exam_M (student_ID, course_ID, Department_ID, Quiz1, Quiz2, Quiz3, Assesments, Mid_Practical, Mid_Theory, Medical_ID)
 VALUES
 ("TG/2020/0011", "ICT1212", "ICT", 70, 75, 80, 85, 0, 60, NULL),
