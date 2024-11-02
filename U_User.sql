@@ -22,7 +22,7 @@ ALTER TABLE user ADD FOREIGIN KEY(Department_ID) REFERENCES department(Departmen
 
 INSERT INTO user (NIC, F_Name, L_Name, Address, E_Mail, Contact_Num, DoB, Gender, Role, Department_ID)
 VALUES
-(887654321001, "Sarath", "Yatawara", "No 21, Hospital Road, Panadura", "s.yatawara_2018@ictec.ruh.ac.lk", "0760879990", "1985-05-18", "Male", "Dean", "ICT"),
+(887654321001, "Sarath", "Yatawara", "No 21, Hospital Road, Panadura", "s.yatawara_2018@ictec.ruh.ac.lk", "0760879990", "1985-05-18", "Male", "Dean", "ICT");
 
 /*INSERT STUDENT DATA TO TABLE*/
 
