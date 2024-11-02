@@ -71,3 +71,28 @@ SELECT sc.courseId,c.courseName,c.credit,c.courseType
 FROM course c
 JOIN student_course sc ON sc.courseId = c.courseId
 WHERE sc.studentId = "TG/2022/0001";
+
+--creating users
+
+--Admin
+CREATE USER 'Admin'@'localhost' IDENTIFIED BY 'admin';
+GRANT ALL PRIVILEGES ON *.* TO 'Admin'@'localhost' WITH GRANT OPTION;
+
+--dean
+CREATE USER 'Dean'@'localhost' IDENTIFIED BY 'dean';
+GRANT ALL PRIVILEGES ON *.* TO 'Dean'@'localhost';
+
+--lecturer
+CREATE USER 'Lecturer'@'localhost' IDENTIFIED BY 'lecturer';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER ON *.* TO 'Lecturer'@'localhost';
+
+--technical
+CREATE USER 'TechnicalOfficer'@'localhost' IDENTIFIED BY 'tech';
+GRANT SELECT, INSERT, UPDATE ON attendance_table TO 'TechnicalOfficer'@'localhost';
+
+--student
+CREATE USER 'Student'@'localhost' IDENTIFIED BY 'student';
+GRANT SELECT ON final_attendance_table, final_marks_table TO 'Student'@'localhost';
+
+
+
