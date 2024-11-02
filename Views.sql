@@ -95,7 +95,7 @@ SELECT
 
     
     CASE 
-        WHEN ca.Medical_ID IS NOT NULL OR ee.Medical_ID IS NOT NULL THEN 'MC' -- Medical Case
+        WHEN ca.Medical_ID IS NOT NULL OR ee.Medical_ID IS NOT NULL THEN 'MC'
         WHEN (ca.Total_Marks_Out_of_40 + ee.END_Exam_Marks) >= 85 THEN 'A+'
         WHEN (ca.Total_Marks_Out_of_40 + ee.END_Exam_Marks) >= 75 THEN 'A'
         WHEN (ca.Total_Marks_Out_of_40 + ee.END_Exam_Marks) >= 70 THEN 'A-'
