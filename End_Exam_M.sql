@@ -1,11 +1,12 @@
-CREATE TABLE END_Exam_M(
-student_ID VARCHAR(20),
-course_ID VARCHAR(20),
-End_Practical decimal(6,2),
-End_Theory decimal(6,2),
-Medical_ID VARCHAR(20),
-PRIMARY KEY (student_ID,course_ID)
+CREATE TABLE END_Exam_M (
+    student_ID VARCHAR(20),
+    course_ID VARCHAR(20),
+    End_Practical DECIMAL(6,2) CHECK (End_Practical >= 0 AND End_Practical <= 100),
+    End_Theory DECIMAL(6,2) CHECK (End_Theory >= 0 AND End_Theory <= 100),
+    Medical_ID VARCHAR(20),
+    PRIMARY KEY (student_ID, course_ID)
 );
+
 
 /*FOREIGN KEY*/
 
