@@ -105,6 +105,7 @@ SELECT
         WHEN (ca.Total_Marks_Out_of_40 + ee.END_Exam_Marks) >= 50 THEN 'C+'
         WHEN (ca.Total_Marks_Out_of_40 + ee.END_Exam_Marks) >= 45 THEN 'C'
         WHEN (ca.Total_Marks_Out_of_40 + ee.END_Exam_Marks) >= 40 THEN 'C-'
+        WHEN (ca.Total_Marks_Out_of_40 + ee.END_Exam_Marks) <= 35 THEN 'D'
         ELSE 'F'
     END AS Final_Grade
 FROM CA_Eligibility ca
