@@ -52,10 +52,33 @@ SELECT
     END AS CA_Eligibility_Status
 FROM CA_Exam_M;
 
+
 /* Call CA Eligibility View*/
 
 SELECT * FROM CA_Eligibility;
 
+/* summary for whole batch By giving course code */
+
+SELECT 
+    student_ID,
+    course_ID,
+    Department_ID,
+    Total_Marks_Out_of_40,
+    CA_Eligibility_Status
+FROM CA_Eligibility
+WHERE course_ID = ' ';
+
+/*  By giving course code and registration no */
+
+SELECT 
+    student_ID,
+    course_ID,
+    Department_ID,
+    Total_Marks_Out_of_40,
+    CA_Eligibility_Status
+FROM CA_Eligibility
+WHERE course_ID = ' '
+AND student_ID = ' ';
 
 
 /* End Exam Mark View*/
@@ -80,40 +103,26 @@ SELECT * FROM END_Exam_Marks;
 
 
 
-/* Grade View*/
+/* Final_Mark View*/
 
-CREATE VIEW Final_Grade AS
+CREATE VIEW Final_Mark AS
 SELECT 
     ca.student_ID,
     ca.course_ID,
     ca.Department_ID,
-    ca.Total_Marks_Out_of_40,     
+    ca.Total_Marks_Out_of_40 AS CA_Marks,
+    ca.Medical_ID,     
     ee.END_Exam_Marks,            
     
-   
-    (ca.Total_Marks_Out_of_40 + ee.END_Exam_Marks) AS Final_Mark_Out_of_100,
-
     
-    CASE 
-        WHEN ca.Medical_ID IS NOT NULL OR ee.Medical_ID IS NOT NULL THEN 'MC'
-        WHEN (ca.Total_Marks_Out_of_40 + ee.END_Exam_Marks) >= 85 THEN 'A+'
-        WHEN (ca.Total_Marks_Out_of_40 + ee.END_Exam_Marks) >= 75 THEN 'A'
-        WHEN (ca.Total_Marks_Out_of_40 + ee.END_Exam_Marks) >= 70 THEN 'A-'
-        WHEN (ca.Total_Marks_Out_of_40 + ee.END_Exam_Marks) >= 65 THEN 'B+'
-        WHEN (ca.Total_Marks_Out_of_40 + ee.END_Exam_Marks) >= 60 THEN 'B'
-        WHEN (ca.Total_Marks_Out_of_40 + ee.END_Exam_Marks) >= 55 THEN 'B-'
-        WHEN (ca.Total_Marks_Out_of_40 + ee.END_Exam_Marks) >= 50 THEN 'C+'
-        WHEN (ca.Total_Marks_Out_of_40 + ee.END_Exam_Marks) >= 45 THEN 'C'
-        WHEN (ca.Total_Marks_Out_of_40 + ee.END_Exam_Marks) >= 40 THEN 'C-'
-        WHEN (ca.Total_Marks_Out_of_40 + ee.END_Exam_Marks) <= 35 THEN 'D'
-        ELSE 'F'
-    END AS Final_Grade
+    (ca.Total_Marks_Out_of_40 + ee.END_Exam_Marks) AS Final_Mark_Out_of_100
+
 FROM CA_Eligibility ca
 JOIN END_Exam_Marks ee
     ON ca.student_ID = ee.student_ID 
     AND ca.course_ID = ee.course_ID;
 
 
-/*Call Grade View*/
+/*Call Final_Mark*/
 
-SELECT * FROM Final_Grade;
+SELECT * FROM Final_Mark;
