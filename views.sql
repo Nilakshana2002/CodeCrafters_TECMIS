@@ -84,7 +84,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'Dean'@'localhost';
 
 --lecturer
 CREATE USER 'Lecturer'@'localhost' IDENTIFIED BY 'lecturer';
-GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER ON *.* TO 'Lecturer'@'localhost';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP,ALTER ON *.* TO 'Lecturer'@'localhost';
 
 --technical
 CREATE USER 'TechnicalOfficer'@'localhost' IDENTIFIED BY 'tech';
