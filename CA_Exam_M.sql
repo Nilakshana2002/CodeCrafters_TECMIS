@@ -1,25 +1,20 @@
-CREATE TABLE CA_Exam_M (
-    student_ID VARCHAR(20),
-    course_ID VARCHAR(20),
-    Department_ID VARCHAR(10),
-    Quiz1 DECIMAL(6,2) CHECK (Quiz1 >= 0 AND Quiz1 <= 100),
-    Quiz2 DECIMAL(6,2) CHECK (Quiz2 >= 0 AND Quiz2 <= 100),
-    Quiz3 DECIMAL(6,2) CHECK (Quiz3 >= 0 AND Quiz3 <= 100),
-    Assesments DECIMAL(6,2) CHECK (Assesments >= 0 AND Assesments <= 100),
-    Mid_Practical DECIMAL(6,2) CHECK (Mid_Practical >= 0 AND Mid_Practical <= 100),
-    Mid_Theory DECIMAL(6,2) CHECK (Mid_Theory >= 0 AND Mid_Theory <= 100),
-    Medical_ID VARCHAR(20),
-    PRIMARY KEY (student_ID, course_ID)
+CREATE TABLE CA_Exam_M(
+student_ID VARCHAR(20),
+course_ID VARCHAR(20),
+Department_ID VARCHAR(10),
+Quiz1 DECIMAL(6,2) CHECK (Quiz1 >= 0 AND Quiz1 <= 100),
+Quiz2 DECIMAL(6,2) CHECK (Quiz2 >= 0 AND Quiz2 <= 100),
+Quiz3 DECIMAL(6,2) CHECK (Quiz3 >= 0 AND Quiz3 <= 100),
+Assesments DECIMAL(6,2) CHECK (Assesments >= 0 AND Assesments <= 100),
+Mid_Practical DECIMAL(6,2) CHECK (Mid_Practical >= 0 AND Mid_Practical <= 100),
+Mid_Theory DECIMAL(6,2) CHECK (Mid_Theory >= 0 AND Mid_Theory <= 100),
+Medical_ID VARCHAR(20),
+PRIMARY KEY (student_ID,course_ID),
+FOREIGN KEY (student_ID) REFERENCES student(studentId) ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (course_ID) REFERENCES course(courseId) ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (Medical_ID) REFERENCES medical(Medical_Id) ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (Department_ID) REFERENCES departmentS(departmentId) ON DELETE CASCADE ON UPDATE CASCADE
 );
-
-
-
-/*FOREIGN KEY*/
-
-ALTER TABLE CA_Exam_M FOREIGN KEY (student_ID) REFERENCES student(student_ID);
-ALTER TABLE CA_Exam_M FOREIGN KEY (course_ID) REFERENCES course(course_ID);
-ALTER TABLE CA_Exam_M FOREIGN KEY (Department_ID) REFERENCES department(Department_ID);
-ALTER TABLE CA_Exam_M FOREIGN KEY (Medical_ID) REFERENCES medical(Medical_Id);
 
 
 /*Common Subject*/

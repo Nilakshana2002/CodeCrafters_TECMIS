@@ -1,10 +1,13 @@
-CREATE TABLE END_Exam_M (
-    student_ID VARCHAR(20),
-    course_ID VARCHAR(20),
-    End_Practical DECIMAL(6,2) CHECK (End_Practical >= 0 AND End_Practical <= 100),
-    End_Theory DECIMAL(6,2) CHECK (End_Theory >= 0 AND End_Theory <= 100),
-    Medical_ID VARCHAR(20),
-    PRIMARY KEY (student_ID, course_ID)
+CREATE TABLE END_Exam_M(
+student_ID VARCHAR(20),
+course_ID VARCHAR(20),
+End_Practical DECIMAL(6,2) CHECK (End_Practical >= 0 AND End_Practical <= 100),
+End_Theory DECIMAL(6,2) CHECK (End_Theory >= 0 AND End_Theory <= 100),
+Medical_ID VARCHAR(20),
+PRIMARY KEY (student_ID,course_ID),
+FOREIGN KEY (student_ID) REFERENCES student(studentId) ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (course_ID) REFERENCES course(courseId) ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (Medical_ID) REFERENCES medical(Medical_Id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 
