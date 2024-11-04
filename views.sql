@@ -73,3 +73,38 @@ JOIN
 /*Call Dean Details*/
 
 SELECT * FROM Dean_Details;
+
+
+/*End Exam Eligibility*/
+
+CREATE VIEW End_Exam_Eligibility AS
+SELECT 
+    ca.student_ID,
+    ca.course_ID,
+    ca.Department_ID,
+    ca.Total_Marks_Out_of_40,
+    ca.CA_Eligibility_Status,
+    att.Attendance_Percentage,
+    
+    CASE 
+        WHEN att.Attendance_Percentage >= 80 
+             AND ca.CA_Eligibility_Status = 'Eligible' 
+        THEN 'Eligible'
+        ELSE 'Not Eligible'
+    END AS End_Exam_Eligibility_Status
+
+FROM 
+    CA_Eligibility ca
+JOIN 
+    Attendance_summary_view att 
+ON 
+    ca.student_ID = att.Student_id 
+    AND ca.course_ID = att.Course_id
+WHERE 
+    ca.CA_Eligibility_Status = 'Eligible';
+
+
+/*Call End Exam Eligibility*/
+
+SELECT *
+FROM End_Exam_Eligibility; 
