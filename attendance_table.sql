@@ -9,7 +9,10 @@ session_Date DATE,
 session_Type VARCHAR(10),
 A_Status VARCHAR(10),
 Medical_ID CHAR(10),
-PRIMARY KEY(student_ID,course_ID,session_Date)
+PRIMARY KEY(student_ID,course_ID,session_Date),
+FOREIGN KEY (student_ID) REFERENCES student(studentId) ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (course_ID) REFERENCES course(courseId) ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (Department_ID) REFERENCES departmentS(departmentId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 
