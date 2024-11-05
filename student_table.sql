@@ -2,10 +2,10 @@
 
 CREATE TABLE student(
     studentId CHAR(12),
-    studentNic INT,
+    studentNic BIGINT,
     state VARCHAR (20),
     PRIMARY KEY (studentId),
-    FOREIGN KEY (studentNic) REFERENCES user(NIC) ON DELETE CASCADE ON UPDATE
+    FOREIGN KEY (studentNic) REFERENCES user(NIC) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 /*INSERT DATA TO STUDENT TABLE*/
@@ -21,9 +21,12 @@ VALUES
 ('TG/2022/0007', '123456789007', 'active'),
 ('TG/2022/0008', '123456789008', 'active'),
 ('TG/2022/0009', '123456789009', 'active'),
-('TG/2022/0010', '123456789010', 'active'),
+('TG/2022/0010', '123456789010', 'active');
 
     -- Repeat students
+
+INSERT INTO student (studentId, studentNic, state) 
+VALUES
 ('TG/2020/0011', '123456789011', 'repeat'),
 ('TG/2020/0012', '123456789012', 'repeat'),
 ('TG/2020/0013', '123456789013', 'repeat'),
@@ -31,7 +34,8 @@ VALUES
 ('TG/2020/0015', '123456789015', 'repeat');
 
   --suspended students
-
+INSERT INTO student (studentId, studentNic, state) 
+VALUES
 ('TG/2022/0016', '123456789016', 'suspend'),
 ('TG/2022/0017', '123456789017', 'suspend'),
 ('TG/2022/0018', '123456789018', 'suspend');
