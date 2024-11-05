@@ -251,3 +251,25 @@ GROUP BY
     Student_ID,
     Course_ID,
     Session_Type;
+
+
+10.medical VIEW
+
+
+CREATE VIEW Medical_Status_View AS
+SELECT 
+    Medical_ID,
+    student_ID,
+    course_ID,
+    Absent_Date AS Absent_From,
+    submit_Date AS Absent_To,
+    DATEDIFF(submit_Date,Absent_Date) AS Days_Since_Absent,
+     M_reason AS Medical_Reason,
+    CASE 
+        WHEN DATEDIFF(submit_Date,Absent_Date) <= 14 THEN 'Valid Medical'
+        ELSE 'Invalid Medical'
+    END AS Medical_Status
+FROM 
+    Medical
+WHERE 
+    Medical_Type IN ('Attendance', 'Exams');
