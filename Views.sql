@@ -84,6 +84,9 @@ END //
 
 DELIMITER ;
 
+CALL GetBatchSummaryByCourse(' ');
+
+
 
 /*  By giving course code and registration no */
 
@@ -109,6 +112,7 @@ END //
 
 DELIMITER ;
 
+CALL GetStudentSummaryByCourse(' ');
 
 --By giving registration no as a summery  
 
@@ -132,6 +136,11 @@ END //
 
 DELIMITER ;
 
+CALL GetSummaryByRegistrationNo(' ');
+
+
+
+--------------------------------------------------------------------------------------------------------
 
 
 /* End Exam Mark View*/
@@ -150,9 +159,64 @@ SELECT
     END AS END_Exam_Marks
 FROM END_Exam_M;
 
---------------------------------------------------------------------------------------------------------
 
+--Procedure to View END_Exam_Marks Summary for Whole Batch by Course Code
 
+DELIMITER //
+
+CREATE PROCEDURE GetBatchENDExamMarks(IN input_course_ID CHAR(7))
+BEGIN
+    SELECT 
+        student_ID,
+        course_ID,
+        Medical_ID,
+        END_Exam_Marks
+    FROM 
+        END_Exam_Marks
+    WHERE 
+        course_ID = input_course_ID;
+END //
+
+DELIMITER ;
+
+--Procedure to View END_Exam_Marks for Individuals by Course Code and Registration Number
+
+DELIMITER //
+
+CREATE PROCEDURE GetIndividualENDExamMarks(IN input_course_ID CHAR(7), IN input_student_ID CHAR(10))
+BEGIN
+    SELECT 
+        student_ID,
+        course_ID,
+        Medical_ID,
+        END_Exam_Marks
+    FROM 
+        END_Exam_Marks
+    WHERE 
+        course_ID = input_course_ID AND 
+        student_ID = input_student_ID;
+END //
+
+DELIMITER ;
+
+--Procedure to View END_Exam_Marks by Registration Number as a Summary
+
+DELIMITER //
+
+CREATE PROCEDURE GetSummaryByRegistrationNo(IN input_student_ID CHAR(10))
+BEGIN
+    SELECT 
+        student_ID,
+        course_ID,
+        Medical_ID,
+        END_Exam_Marks
+    FROM 
+        END_Exam_Marks
+    WHERE 
+        student_ID = input_student_ID;
+END //
+
+DELIMITER ;
 
 
 
@@ -185,6 +249,82 @@ FROM CA_Eligibility ca
 JOIN END_Exam_Marks ee
     ON ca.student_ID = ee.student_ID 
     AND ca.course_ID = ee.course_ID;
+
+
+-- Procedure for Whole Batch Summary by Course Code Final_Mark
+
+
+DELIMITER //
+
+CREATE PROCEDURE GetFinalMarksByCourseCode(IN input_course_ID CHAR(7))
+BEGIN
+    SELECT 
+        student_ID,
+        course_ID,
+        Department_ID,
+        CA_Marks,
+        Medical_ID,
+        END_Exam_Marks,
+        Final_Mark_Out_of_100
+    FROM 
+        Final_Mark
+    WHERE 
+        course_ID = input_course_ID;
+END //
+
+DELIMITER ;
+
+
+
+-- Procedure for Individual Summary by Course Code and Registration Number Final_Mark
+
+
+DELIMITER //
+
+CREATE PROCEDURE GetFinalMarksByCourseAndRegNo(IN input_course_ID CHAR(7), IN input_student_ID CHAR(10))
+BEGIN
+    SELECT 
+        student_ID,
+        course_ID,
+        Department_ID,
+        CA_Marks,
+        Medical_ID,
+        END_Exam_Marks,
+        Final_Mark_Out_of_100
+    FROM 
+        Final_Mark
+    WHERE 
+        course_ID = input_course_ID
+        AND student_ID = input_student_ID;
+END //
+
+DELIMITER ;
+
+
+
+
+-- Procedure for Individual Summary by Registration Number Final_Mark
+
+DELIMITER //
+
+CREATE PROCEDURE GetFinalMarksByRegNo(IN input_student_ID CHAR(10))
+BEGIN
+    SELECT 
+        student_ID,
+        course_ID,
+        Department_ID,
+        CA_Marks,
+        Medical_ID,
+        END_Exam_Marks,
+        Final_Mark_Out_of_100
+    FROM 
+        Final_Mark
+    WHERE 
+        student_ID = input_student_ID;
+END //
+
+DELIMITER ;
+
 
 
 /*Call Final_Mark*/
