@@ -181,20 +181,38 @@ FROM Final_Grade
 JOIN ON student.studentId = final_grade.studentId
 WHERE studentId = 'TG/2022/0001';
 
+-- Procedure to retrieve grades for a specific student
 
---Grade individual student according to the by law of the faculty
+DELIMITER //
+CREATE PROCEDURE GetStudentGrades(IN input_student_ID VARCHAR(20))
+BEGIN
+    SELECT 
+        course_ID,
+        Grade
+    FROM 
+        Final_Grade
+    WHERE 
+        student_ID = input_student_ID;
+END //
+DELIMITER ;
 
+CALL GetStudentGrades('TG/2022/0001');
+-- Procedure to retrieve all marks for a specific course
 
-SELECT course_ID,grade
-FROM final_grade
-WHERE student_ID = "TG/2022/0001";
+DELIMITER //
+CREATE PROCEDURE GetCourseMarks(IN input_course_ID VARCHAR(20))
+BEGIN
+    SELECT 
+        *
+    FROM 
+        Final_Mark
+    WHERE 
+        course_ID = input_course_ID;
+END //
+DELIMITER ;
 
+CALL GetCourseMarks('ENG1222');
 
--- There should be a way to see marks for each subject, student and as a whole batch 
-
-SELECT *
-FROM final_mark
-WHERE course_ID = "ENG1212";
 
 
 -- create view for CGPA comulative gpa
