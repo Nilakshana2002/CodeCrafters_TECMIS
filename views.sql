@@ -262,9 +262,24 @@ GROUP BY student_ID;
 
 --There should be a way to see Grades for each subject, student and as a whole batch
 
-SELECT student_ID,grade
-FROM final_grade
-WHERE course_ID  = "ENG1222";
+DELIMITER //
+
+CREATE PROCEDURE GetCourseGrades(IN input_course_ID VARCHAR(20))
+BEGIN
+    SELECT 
+        student_ID,
+        grade
+    FROM 
+        final_grade
+    WHERE 
+        course_ID = input_course_ID;
+END //
+
+DELIMITER ;
+
+
+CALL GetCourseGrades('ENG1222');
+
 
 
 
