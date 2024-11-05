@@ -141,7 +141,7 @@ FROM (
     JOIN course c ON final.course_ID = c.courseId
     JOIN Final_Grade ca ON final.student_ID = ca.student_ID AND final.course_ID = ca.course_ID
     GROUP BY final.student_ID, c.courseId, ca.Grade, c.credit
-) --AS Grade_Calculation
+) -- Grade_Calculation for per course
 GROUP BY student_ID;
 
 ----to get total credits for specific student according to he followed courses
@@ -203,9 +203,9 @@ SELECT
 FROM (
     SELECT 
         student_ID,
-        SUM(Grade_Points) AS Total_Honor_Points,
+        SUM(Grade_Points) AS Total_grade_Points,
         SUM(credit) AS Total_Credits,
-        SUM(Grade_Points) / NULLIF(SUM(credit), 0) AS Semester_GPA
+        SUM(Grade_Points) / SUM(credit) AS Semester_GPA
     FROM (
         SELECT 
             final.student_ID,
@@ -231,11 +231,11 @@ FROM (
         FROM Final_Mark final
         JOIN course c ON final.course_ID = c.courseId
         JOIN Final_Grade ca ON final.student_ID = ca.student_ID AND final.course_ID = ca.course_ID
-        WHERE c.courseId != 'ENG1222'  -- Exclude the ENG1222 course
+        WHERE c.courseId != 'ENG1222'  -- Exclude the ENG1222 course beacause it is non gpa course
         GROUP BY final.student_ID, c.courseId, ca.Grade, c.credit
-    ) AS Grade_Calculation
+    ) -- Grade_Calculation part
     GROUP BY student_ID
-) AS Semester_Calculations
+)  
 GROUP BY student_ID;
 
 
