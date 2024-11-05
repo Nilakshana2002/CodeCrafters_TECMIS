@@ -108,3 +108,82 @@ WHERE
 
 SELECT *
 FROM End_Exam_Eligibility; 
+
+
+/*Batch Summary by Course Code*/
+
+CREATE PROCEDURE Batch_End_Exam_Eligibility_Summary(
+    IN course_code VARCHAR(10)
+)
+BEGIN
+    SELECT 
+        student_ID,
+        course_ID,
+        Department_ID,
+        Total_Marks_Out_of_40,
+        CA_Eligibility_Status,
+        Attendance_Percentage,
+        End_Exam_Eligibility_Status
+    FROM 
+        End_Exam_Eligibility
+    WHERE 
+        course_ID = course_code;
+END;
+
+/*Call Batch Summary by Course Code*/
+
+CALL Batch_End_Exam_Eligibility_Summary('CS101');
+
+
+/*Individual Eligibility by Course and Registration Number*/
+
+CREATE PROCEDURE Individual_End_Exam_Eligibility(
+    IN course_code VARCHAR(10),
+    IN registration_no VARCHAR(15)
+)
+BEGIN
+    SELECT 
+        student_ID,
+        course_ID,
+        Department_ID,
+        Total_Marks_Out_of_40,
+        CA_Eligibility_Status,
+        Attendance_Percentage,
+        End_Exam_Eligibility_Status
+    FROM 
+        End_Exam_Eligibility
+    WHERE 
+        course_ID = course_code
+        AND student_ID = registration_no;
+END;
+
+
+/*Call Individual Eligibility by Course and Registration Number*/
+
+CALL Individual_End_Exam_Eligibility('CS101', 'REG12345');
+
+
+/*Individual Summary by Registration Number*/
+
+CREATE PROCEDURE Individual_End_Exam_Eligibility_Summary(
+    IN registration_no VARCHAR(15)
+)
+BEGIN
+    SELECT 
+        student_ID,
+        course_ID,
+        Department_ID,
+        Total_Marks_Out_of_40,
+        CA_Eligibility_Status,
+        Attendance_Percentage,
+        End_Exam_Eligibility_Status
+    FROM 
+        End_Exam_Eligibility
+    WHERE 
+        student_ID = registration_no;
+END;
+
+
+/*Call Individual Summary by Registration Number*/
+
+CALL Individual_End_Exam_Eligibility_Summary('REG12345');
