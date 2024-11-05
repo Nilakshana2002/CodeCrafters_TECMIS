@@ -57,28 +57,81 @@ FROM CA_Exam_M;
 
 SELECT * FROM CA_Eligibility;
 
+
+
+
+-- CA Procedures--
+
 /* summary for whole batch By giving course code */
 
-SELECT 
-    student_ID,
-    course_ID,
-    Department_ID,
-    Total_Marks_Out_of_40,
-    CA_Eligibility_Status
-FROM CA_Eligibility
-WHERE course_ID = ' ';
+DELIMITER //
+
+CREATE PROCEDURE GetBatchSummaryByCourse(
+    IN input_course_ID VARCHAR(20)
+)
+BEGIN
+    SELECT 
+        student_ID,
+        course_ID,
+        Department_ID,
+        Total_Marks_Out_of_40,
+        CA_Eligibility_Status
+    FROM 
+        CA_Eligibility
+    WHERE 
+        course_ID = input_course_ID;
+END //
+
+DELIMITER ;
+
 
 /*  By giving course code and registration no */
 
-SELECT 
-    student_ID,
-    course_ID,
-    Department_ID,
-    Total_Marks_Out_of_40,
-    CA_Eligibility_Status
-FROM CA_Eligibility
-WHERE course_ID = ' '
-AND student_ID = ' ';
+DELIMITER //
+
+CREATE PROCEDURE GetStudentSummaryByCourse(
+    IN input_course_ID VARCHAR(20),
+    IN input_student_ID VARCHAR(20)
+)
+BEGIN
+    SELECT 
+        student_ID,
+        course_ID,
+        Department_ID,
+        Total_Marks_Out_of_40,
+        CA_Eligibility_Status
+    FROM 
+        CA_Eligibility
+    WHERE 
+        course_ID = input_course_ID
+        AND student_ID = input_student_ID;
+END //
+
+DELIMITER ;
+
+
+--By giving registration no as a summery  
+
+DELIMITER //
+
+CREATE PROCEDURE GetSummaryByRegistrationNo(
+    IN input_student_ID VARCHAR(20)
+)
+BEGIN
+    SELECT 
+        student_ID,
+        course_ID,
+        Department_ID,
+        Total_Marks_Out_of_40,
+        CA_Eligibility_Status
+    FROM 
+        CA_Eligibility
+    WHERE 
+        student_ID = input_student_ID;
+END //
+
+DELIMITER ;
+
 
 
 /* End Exam Mark View*/
@@ -96,6 +149,17 @@ SELECT
         ELSE 2 * End_Theory * 0.3 
     END AS END_Exam_Marks
 FROM END_Exam_M;
+
+--------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
 
 /*Call End Exam Mark View*/
 
