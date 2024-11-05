@@ -114,7 +114,7 @@ LEFT JOIN medical m ON ca.Medical_ID = m.Medical_ID;
 CREATE VIEW Semester_GPA AS
 SELECT 
     student_ID,
-    AVG(Grade_Points) AS Semester_GPA
+    SUM(Grade_Points) / SUM(credit) AS Semester_GPA
 FROM (
     SELECT 
         final.student_ID,
