@@ -132,7 +132,7 @@ END;
 
 /*Call Batch Summary by Course Code*/
 
-CALL Batch_End_Exam_Eligibility_Summary('CS101');
+CALL Batch_End_Exam_Eligibility_Summary('ICT1212');
 
 
 /*Individual Eligibility by Course and Registration Number*/
@@ -160,7 +160,7 @@ END;
 
 /*Call Individual Eligibility by Course and Registration Number*/
 
-CALL Individual_End_Exam_Eligibility('CS101', 'REG12345');
+CALL Individual_End_Exam_Eligibility('ICT1212', 'REG12345');
 
 
 /*Individual Summary by Registration Number*/
