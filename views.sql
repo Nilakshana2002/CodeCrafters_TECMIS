@@ -186,4 +186,4 @@ END;
 
 /*Call Individual Summary by Registration Number*/
 
-CALL Individual_End_Exam_Eligibility_Summary('REG12345');
+CALL Individual_End_Exam_Eligibility_Summary('TG/2022/0001');
