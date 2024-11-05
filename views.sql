@@ -85,6 +85,7 @@ SELECT
     CASE 
         WHEN s.state = 'suspend' THEN 'WH' 
         WHEN final.Final_Mark_Out_of_100 IS NULL THEN 'Invalid' 
+        WHEN eee.End_Exam_Eligibility_Status = 'Not Eligible' THEN 'F' 
         WHEN s.state = 'repeat' AND final.Final_Mark_Out_of_100 > 55 THEN 'C' 
         WHEN m.Medical_ID IS NOT NULL THEN 'MC' 
         WHEN final.Final_Mark_Out_of_100 >= 85 AND final.Final_Mark_Out_of_100 <= 100 THEN 'A+'
@@ -104,9 +105,11 @@ SELECT
 
 FROM Final_Mark final
 JOIN student s ON final.student_ID = s.studentId
+LEFT JOIN End_Exam_Eligibility eee ON final.student_ID = eee.student_ID AND final.course_ID = eee.course_ID
 LEFT JOIN END_Exam_M ee ON final.student_ID = ee.student_ID AND final.course_ID = ee.course_ID 
 LEFT JOIN CA_Exam_M ca ON final.student_ID = ca.student_ID AND final.course_ID = ca.course_ID 
-LEFT JOIN medical m ON ca.Medical_ID = m.Medical_ID; 
+LEFT JOIN medical m ON ca.Medical_ID = m.Medical_ID;
+
 
 
 --creating semester GPA view
