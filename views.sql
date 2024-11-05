@@ -141,7 +141,7 @@ FROM (
     JOIN course c ON final.course_ID = c.courseId
     JOIN Final_Grade ca ON final.student_ID = ca.student_ID AND final.course_ID = ca.course_ID
     GROUP BY final.student_ID, c.courseId, ca.Grade, c.credit
-) AS Grade_Calculation
+) --AS Grade_Calculation
 GROUP BY student_ID;
 
 ----to get total credits for specific student according to he followed courses
