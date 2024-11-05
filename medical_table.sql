@@ -4,7 +4,9 @@ student_ID VARCHAR(20),
 course_ID VARCHAR(20),
 submit_Date  DATE,
 M_reason VARCHAR(50),
-PRIMARY KEY(Medical_Id)
+PRIMARY KEY(Medical_Id),
+FOREIGN KEY (student_ID) REFERENCES student(studentId) ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (course_ID) REFERENCES course(courseId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 
