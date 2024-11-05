@@ -112,7 +112,7 @@ END //
 
 DELIMITER ;
 
-CALL GetStudentSummaryByCourse(' ');
+CALL GetStudentSummaryByCourse(' ',' ');
 
 --By giving registration no as a summery  
 
@@ -179,6 +179,8 @@ END //
 
 DELIMITER ;
 
+CALL GetBatchENDExamMarks(' ');
+
 --Procedure to View END_Exam_Marks for Individuals by Course Code and Registration Number
 
 DELIMITER //
@@ -199,6 +201,9 @@ END //
 
 DELIMITER ;
 
+
+CALL GetIndividualENDExamMarks(' ','');
+
 --Procedure to View END_Exam_Marks by Registration Number as a Summary
 
 DELIMITER //
@@ -218,7 +223,7 @@ END //
 
 DELIMITER ;
 
-
+CALL GetSummaryByRegistrationNo(' ');
 
 
 
@@ -274,7 +279,7 @@ END //
 
 DELIMITER ;
 
-
+CALL GetFinalMarksByCourseCode(' ');
 
 -- Procedure for Individual Summary by Course Code and Registration Number Final_Mark
 
@@ -301,7 +306,7 @@ END //
 DELIMITER ;
 
 
-
+CALL GetFinalMarksByCourseAndRegNo(' ','');
 
 -- Procedure for Individual Summary by Registration Number Final_Mark
 
@@ -325,7 +330,7 @@ END //
 
 DELIMITER ;
 
-
+CALL GGetFinalMarksByRegNo(' ');
 
 /*Call Final_Mark*/
 
