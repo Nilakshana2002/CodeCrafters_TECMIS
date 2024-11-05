@@ -239,6 +239,13 @@ FROM (
 GROUP BY student_ID;
 
 
+--There should be a way to see Grades for each subject, student and as a whole batch
+
+SELECT student_ID,grade
+FROM final_grade
+WHERE course_ID  = "ENG1222";
+
+
 
 
 
